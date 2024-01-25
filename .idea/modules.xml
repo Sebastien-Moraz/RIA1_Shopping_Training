@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/RIA1_Shopping_Training.iml" filepath="$PROJECT_DIR$/.idea/RIA1_Shopping_Training.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/RIA1_TDD_TRAINING.iml" filepath="$PROJECT_DIR$/.idea/RIA1_TDD_TRAINING.iml" />
+>>>>>>> eb3fd3e8a646762f1c42daa959e18c0812ce9e23
     </modules>
   </component>
 </project>
