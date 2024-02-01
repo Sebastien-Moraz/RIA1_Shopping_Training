@@ -9,7 +9,19 @@ jobs:
     name: Run project tests
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
     - name: Setup Node.js ("latest" Version)
       uses: actions/setup-node@v4
       with:
-        node-version: latest   # <-- use "latest" for the most recent Node.js version
+        node-version: latest
+
+    - name: Change to test directory
+      run: cd src/test
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm test
