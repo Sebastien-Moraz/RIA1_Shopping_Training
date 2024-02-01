@@ -17,9 +17,6 @@ jobs:
       with:
         node-version: 20.11
 
-    - name: Change to test directory
-      run: cd src/test
-
     - name: Install dependencies
       run: npm install
 
