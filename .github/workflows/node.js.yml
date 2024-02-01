@@ -17,9 +17,6 @@ jobs:
       with:
         node-version: 20.11
 
-    - name: npm ci
-      run: npm ci
-
 
     - name: Run tests
       run: npm test
