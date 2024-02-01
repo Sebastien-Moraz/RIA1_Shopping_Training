@@ -75,11 +75,8 @@ module.exports = class Cart {
 
     CountQuantityAllItems() {
         this.CheckValidItems(this._items)
-        let count = 0;
-        for (let i = 0; i < this._items.length; i++) {
-            count += this._items[i].quantity;
-        }
-        return count;
+        return this._items.reduce((totalQuantity, item) => totalQuantity + item.quantity, 0);
+
     }
 
     //endregion private methods
