@@ -15,7 +15,7 @@ jobs:
     - name: Setup Node.js ("latest" Version)
       uses: actions/setup-node@v4
       with:
-        node-version: latest
+        node-version: 20.11
 
     - name: Change to test directory
       run: cd src/test
