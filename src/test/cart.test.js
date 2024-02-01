@@ -122,7 +122,7 @@ test('count_EmptyCart_ThrowException', () => {
     expect(() => cart.count()).toThrow(EmptyCartException);
 })
 
-test('add_EmptyCartAddFirstSingleCartItem_GetsUpdatedNumberOfItems', () => {
+test('add_EmptyCartAddFirstSingleCartItem_totalCorrecltyUpdated', () => {
     //given
     let cart = new Cart(null);
     let expectedTotalPrice = 10;
@@ -133,7 +133,7 @@ test('add_EmptyCartAddFirstSingleCartItem_GetsUpdatedNumberOfItems', () => {
     cart.add(items);
 
     //then
-    expect(cart.total).toEqual(cart.total);
+    expect(expectedTotalPrice).toEqual(cart.total);
 })
 
 test('add_EmptyCartEmptyItemsToAdd_ThrowException', () => {
